@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Style/index.css">
+    <script src="https://kit.fontawesome.com/c939d0e917.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="main-container">
+        <div class="side-bar-container">
+            <i class="fab fa-twitter"></i>
+            <div class="home-icon">
+                <i class="fas fa-home"></i>
+            </div>
+            <div class="profile-pic"></div>
+        </div>
+        <div class="tweets-container">
+            <div class="search-bar">
+                <input type="text" placeholder="Search Tweets" id="search-bar-input" onkeyup="onEnter(event)">
+                <i class="fas fa-search" onclick="getTwitterData()"></i>
+            </div>
+            <div class="tweets-list-container">
+                <div class="welcome-message">
+                    <h2>Welcome to Ale's Twitter Clone!</h2>
+                    <h5>Use the above search bar to see what's happening around the world 🌎</h5>
+                </div>
+            </div>
+            <div class="next-page-btn" onclick="OnNextPage()">
+                <i class="fas fa-arrow-down"></i>
+            </div>
+            
+        </div>
+        
+       
+        <div class="trends-list-container">
+            <div class="trends-list">
+                <ul>
+                    <h3>Trends for you</h3>
+                    <li onclick="OnTrend(this)">#nature</li>
+                    <li onclick="OnTrend(this)">#art</li>
+                    <li onclick="OnTrend(this)">#photography</li>
+                    <li onclick="OnTrend(this)">#GIF</li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+    <div class="modal" onclick="modalEvent(this)">
+        <img class="full-img">
+    </div>
+    <script src="./JavaScript/index.js"></script>
+    <script src="./JavaScript/img_pop_up.js"></script>
+
+    
+
+
+</body>
+</html>
