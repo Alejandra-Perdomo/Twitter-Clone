@@ -1,7 +1,7 @@
 
 const express=require('express');
 const app=express();
-const Twitter=require('./API/helpers/twitter');
+const Twitter=require('./twitter');
 const tweets=new Twitter();
 require('dotenv').config();
 
