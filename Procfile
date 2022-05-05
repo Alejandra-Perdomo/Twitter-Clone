@@ -1,1 +1,1 @@
-web: node API-Master/app.js
+web: node app.js
